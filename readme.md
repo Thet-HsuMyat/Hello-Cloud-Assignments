@@ -34,8 +34,12 @@ ssh-add -l
 inside the jump host 
 ssh-add -l
 
+Always check mac address and update jump-hostsg groups of cidr_blocks
 curl https://checkip.amazonaws.com - to get mac address for ssh jumphost
 
 sudo nano /etc/dashboard.env
 sudo systemctl restart dashboard
 sudo systemctl status dashboard
+
+sudo cp ~/team8-root-ca.crt /etc/pki/ca-trust/source/anchors
+sudo update-ca-trust
