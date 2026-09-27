@@ -136,7 +136,7 @@ resource "aws_vpc_security_group_ingress_rule" "counting_from_counting_alb" {
 resource "aws_vpc_security_group_ingress_rule" "jump_ssh" {
   security_group_id = aws_security_group.jump.id
 
-  cidr_ipv4   = "130.62.145.0/32"
+  cidr_ipv4   = "130.62.145.195/32"
   from_port   = 22
   to_port     = 22
   ip_protocol = "tcp"

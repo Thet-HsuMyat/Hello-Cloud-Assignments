@@ -1,6 +1,14 @@
+# Terraform
 .terraform/
 *.tfstate
 *.tfstate.*
+*.tfvars
+.terraform.lock.hcl
+
+# Private keys / certificates
+*.key
 *.pem
-.env
+*.crt
+
+# macOS
 .DS_Store

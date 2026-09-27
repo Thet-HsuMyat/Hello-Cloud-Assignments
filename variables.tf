@@ -22,10 +22,18 @@ variable "dashboard_ami_id" {
   type = string
 }
 
+variable "dashboard_new_ami_id" {
+  type = string
+}
+
 variable "counting_ami_id" {
   type = string
 }
 
 variable "aws_profile" {
+  type = string
+}
+
+variable "dashboard_certificate_arn" {
   type = string
 }
